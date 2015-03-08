@@ -1,0 +1,30 @@
+.tag-list-widget {
+	margin: 15px auto;
+	width: 600px;
+}
+
+.view-edit-tag-list {
+	margin: 5px 15px;
+}
+
+.label {
+	display: inline-block;
+	font-size: 14px;
+	margin: 2px 0 2px 5px;
+}
+
+.edit-tag-list {
+	margin: 5px 0;
+}
+
+.close-tag {
+	padding-left: 5px;
+	margin-left: 10px;
+		color: red;
+		border-left: 1px solid rgba(27, 131, 161, 0.54); 
+}
+.close-tag:hover {
+	text-decoration: none;
+	color: red;
+	cursor: pointer;
+}

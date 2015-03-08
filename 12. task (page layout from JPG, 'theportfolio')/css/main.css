@@ -1,0 +1,519 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+   	margin: 0;
+   	padding: 0;
+   	border: 0;
+   	font-size: 100%;
+   	font: inherit;
+   	vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+   	display: block;
+   }
+   body {
+   	line-height: 1;
+   }
+   ol, ul {
+   	list-style: none;
+   }
+   blockquote, q {
+   	quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+   	content: '';
+   	content: none;
+   }
+   table {
+   	border-collapse: collapse;
+   	border-spacing: 0;
+   }
+
+
+/*collor
+darck grey #888888
+light grey #bbbbbb
+red        #d9343a
+*/
+
+
+/*my style*/
+body {
+	background: url(../img/background.png);
+	color: #bbbbbb;
+}
+
+.wrapper {
+	max-width: 70%;
+	min-width: 980px;
+	margin: auto;
+}
+
+a {
+	color: #bbbbbb;
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../fonts/leaguegothic-regular-webfont.eot');
+	src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+	url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+	url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/*styles for header*/
+header{
+	margin-top: 30px;
+}
+
+.name, .logo-text {
+
+	display: block;
+}
+
+.name{
+	font-size: 12px;
+	color: red;
+}
+
+
+.logo {
+	text-transform: uppercase;
+	font-family: Arial;
+	float: left;
+}
+
+.logo-text {
+	font-family: League Gothic, sans-serif;
+	font-size: 48px;
+	color: #888888;
+	text-decoration: underline;
+}
+
+
+.top-menu li{
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 30px;
+}
+
+nav{
+	font-family: League Gothic, sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+	float: right;
+}
+
+.active {
+	color: #888888;
+	text-decoration: underline;
+}
+
+header a:hover .logo-text{
+	text-decoration: none;
+}
+
+
+.top-menu a:hover{
+	text-decoration: underline;
+}
+
+header:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/*styles for appeal*/
+
+.appeal {
+	font-family: Arial, sans-serif;
+	font-size: 53px;
+	color: #888888;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.appeal p:first-child{
+	font-weight: bold;
+}
+
+/*content, section, about-skills*/
+.about-skills {
+	margin-top: 100px;
+}
+
+.about-me {
+	float: left;
+	width: 49%;
+}
+
+h1{
+	font-family: League Gothic, sans-serif;
+	font-size: 38px;
+	color: #d9343a;
+	text-transform: uppercase;
+	border-bottom: 3px solid;
+	border-color: #bbbbbb;
+	padding-left: 7px;
+}	
+
+.about-me p {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.3;
+	color: #888888;
+	margin-top: 15px;
+}
+
+.about-me img {
+	float: left;
+	padding-top: 15px;	
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 7px;
+}
+.about-me:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.skills {
+	float: right;
+	width: 49%;
+}
+
+h2{
+	font-family: League Gothic, sans-serif;
+	font-size: 23px;
+	color: #888888;
+	text-transform: uppercase;
+	padding-left: 7px;
+}
+
+.skills-graphic-design, .skills-web {
+	width: 49%
+	
+}
+
+.skills-web {
+	float: left;
+	margin-top: 15px;
+}
+
+.skills-graphic-design {
+	float: right;
+	margin-top: 15px;
+}
+
+.skills li {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.3;
+	color: #888888;
+	list-style-type: disc;
+	margin-top: 4px;
+	margin-left: 24px;
+}
+
+.about-skills:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.skills:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*content, section, works*/
+.works {
+	margin-top: 70px;
+}
+
+.select-work li {
+	display: inline-block;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+.select-work a:hover{
+	color: #888888;
+}
+
+.active-work {
+	color: #888888;
+}
+.select-work {
+	float: right;
+	margin-top: 20px;
+}
+
+.imges-work{
+	margin-top: 10px;
+	text-align: center
+}
+
+.imges-work a{
+	display: inline-block;
+	margin: 10px;
+}
+
+.imges-work figcaption {
+	text-align: center;
+	margin-top: 7px;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #888888;
+}
+
+
+
+/*shedow*/
+figure {
+    display: block; 
+    position: relative;
+}
+
+figure:after{
+	content: '';
+	position: absolute;
+	width: 10%;
+	height: 70%;
+	top: 5px;
+	z-index: -1;
+	right: 15px;
+	box-shadow: 15px 0 10px rgba(0,0,0,0.6);
+	transform: rotate(4deg);
+}
+figure:before {
+	content: '';
+	position: absolute;
+	width: 10%;
+	height: 70%;
+	top: 5px;
+	left: 15px;
+	z-index: -1;
+	box-shadow: -15px 0 10px rgba(0,0,0,0.6);
+    transform: rotate(-4deg);
+}
+
+
+/*content, section, contacts*/
+
+.contact {
+	margin-top: 60px;
+}
+
+.contact-form input, textarea{
+	background-color: #e8e8e8;
+	font-size: 30px;
+	border: inset 1px;
+}
+.contact-form {
+	
+	float: left;
+}
+
+.name-e-mail input {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #888888;
+}
+
+.form-name {
+	float: left;
+	margin-left: 10px;
+}
+.contact-form label{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.form-e-mail {
+	float: left;
+	margin: 0 0 0 16px;
+}
+
+.contact-form>h2 {
+	margin-top: 23px;
+}
+
+.name-e-mail input{
+	width: 220px;
+	height: 30px;
+}
+.name-e-mail:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.form-masseger {
+	margin: 5px 0 0 10px;
+}
+
+
+.form-masseger textarea{
+	width: 450px;
+	height: 120px;
+	resize: none;
+	font-size: 14px;
+	color: #888888;
+}
+
+.form-submit {
+	margin: 20px 0 0 10px;
+}
+.form-submit input{
+	width: 100px;
+	height: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: League Gothic, sans-serif;
+	font-size: 23px;
+	color: #fff4f7;
+	background: #da7676;
+	border: outset 3px;
+	border-color: #e28c8d;
+}
+.contact-form:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.other-contact-info h2 {
+	margin: 23px 0 18px 0;
+	padding-left: 0;
+	text-align: left;
+}
+
+.other-contact-info{
+	float: right;
+    width: 433px;
+}
+
+.img-map{
+	float: right;
+}
+
+.contact-address {
+	float: right;
+	margin-left: 43px;
+	font-family: Arial, sans-serif;
+}
+
+
+.contact-address h3{
+	text-transform: capitalize;
+	margin-bottom:5px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.contact-address p{
+	margin-bottom: 12px;
+	font-size: 11px;
+	 line-height: 1.5;
+}
+
+.contact-address a{
+	text-decoration: underline;
+}
+.contact-address a:hover{
+	text-decoration: none;	
+}
+
+
+
+
+.contact:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+footer{
+	margin-top: 40px;
+	border-top: 3px solid;
+	border-color: #bbbbbb;
+	color: #878586;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+}
+
+footer p{
+	margin: 14px 0 90px 10px;
+	float: left;
+}
+
+.underline-text {
+	text-decoration: underline;
+}
+
+footer li{
+	float: left;
+}
+
+footer ul{
+	float: right;
+	margin-top: 5px;
+}
+
+footer a{
+	display: block;
+	height: 30px;
+}
+
+.socnet-twitter {
+	width:35px;
+	height: 30px;
+	background:url('../img/ico_socnet_sprite.png') 0 0;
+}
+.socnet-facebook {
+	width:30px;
+	height: 30px;
+	background:url('../img/ico_socnet_sprite.png') -35px 0;
+}
+.socnet-Dribbble {
+	width:35px;
+	height: 30px;
+	background:url('../img/ico_socnet_sprite.png') -70px 0;
+}
+.socnet-YouTube {
+	width:35px;
+	height: 30px;
+	background:url('../img/ico_socnet_sprite.png') -105px 0;
+}
+
+
+

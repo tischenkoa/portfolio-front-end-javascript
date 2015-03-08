@@ -1,0 +1,12 @@
+.blockSite {
+        float: left;
+        height: 500px;
+        width: 50%;
+        box-sizing: border-box;
+        border: 1px inset red;
+        background: rgb(176, 176, 176);
+}
+
+.cottext-menu-right {
+	background: rgb(137, 137, 137);
+}

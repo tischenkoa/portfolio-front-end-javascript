@@ -1,0 +1,41 @@
+.small-img {
+    cursor: pointer;
+}
+.large-img {
+	/*float: left;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.large-img>img{
+	height: 100%;
+	width: 100%;
+}
+.background-shading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.close-large-img {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background: black;
+	color: rgb(255, 255, 255);
+	font-size: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.close-large-img:hover {
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.5);
+}

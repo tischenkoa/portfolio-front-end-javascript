@@ -1,0 +1,57 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+.slider {
+	height: 345px;
+	width: 1100px;
+	max-width: 70%;
+	min-width: 1100px;
+	margin: auto;
+	top: 10px;
+	outline: 1px solid grey;
+	margin-top: 20px;
+}
+
+.naviSlider {
+	float: left;
+}
+
+.naviSlider > div {
+	width: 190px;
+	height: 85.5px;
+	outline: 1px solid grey;
+	margin-bottom: 1px;
+	position: relative;
+}
+
+.naviSlider > .activ {
+	background: orange;
+}
+
+.naviSlider .activ:before{
+	content: '';
+	border: 20px solid transparent;
+	border-left: 18px solid orange;
+	-moz-border-top-colors: transparent;
+	position: absolute;
+	outline: none;
+	left: 187px;
+	top: 23px;
+	z-index: 100;
+}
+
+.imgSlider {
+	overflow: hidden;
+}
+
+.slideList {
+	position: relative;
+/*	overflow:hidden;*/
+	width: 3640px;
+}
+
+.slideList div {
+	width: 910px;
+	height: 345px;
+	float: left;
+}
