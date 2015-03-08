@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>16</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/ContextMenu.css">
+    <script src="./js/ContextMenu.js"></script>
+</head>
+
+<body>
+    <div class="blockSite cottext-menu-left">1</div>
+    <div class="blockSite cottext-menu-right">2</div>
+    <script>
+    (function() {
+        var structMenu = [{
+            title: 'File',
+            action: function() {
+                console.log('open file');
+            }
+        }, {
+            title: 'Edit',
+            action: function() {
+                console.log('edit content');
+            }
+        }, {
+            title: 'More stuff',
+            submenu: [{
+                title: 'Send by email',
+                action: function() {
+                    console.log('emailed');
+                }
+            }, {
+                title: 'Send via skype',
+                action: function() {
+                    console.log('skyped');
+                }, 
+            },{
+            title: 'Social Networks',
+            submenu: [{
+                title: 'Facebook',
+                action: function() {
+                    console.log('Facebook');
+                }
+            }, {
+                title: 'Twitter',
+                action: function() {
+                    console.log('Twitter');
+                }, 
+            }]
+        }]
+        }];
+
+        var structMenu2 = [{
+            title: 'File',
+            action: function() {
+                console.log('open file');
+            }
+        }, {
+            title: 'Edit',
+            action: function() {
+                console.log('edit content');
+            }
+        }, {
+            title: 'More stuff',
+            submenu: [{
+                title: 'Send by email',
+                action: function() {
+                    console.log('emailed');
+                }
+            }, {
+                title: 'Send via skype',
+                action: function() {
+                    console.log('skyped');
+                }, 
+            }]
+        }];
+
+        window.contextMenuOne = new ContextMenu(document.querySelector(".cottext-menu-left"), structMenu);
+        window.contextMenuTwo = new ContextMenu(document.querySelector(".cottext-menu-right"), structMenu2);
+    })();
+    </script>
+</body>
+
+</html>
+
+
