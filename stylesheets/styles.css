@@ -1008,3 +1008,29 @@ footer {
     width: auto;
   }
 }
+
+.linkedin {
+  font: 20px "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #33AFCC;
+}
+.linkedin span {
+  font-size: 14px;
+}
+
+.linkedin:hover {
+  text-decoration: underline;
+}
+
+.view-on-github {
+  border: 1px solid rgb(157, 187, 66);
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 0 3px;
+  background: rgb(129, 255, 126);
+  color: black;
+}
+ 
+.view-on-github:hover {
+  background: linear-gradient(#ffffff, #ffe788);
+}
+
