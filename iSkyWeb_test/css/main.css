@@ -1,0 +1,509 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+body {
+    line-height: 1
+}
+ol, ul {
+    list-style: none
+}
+blockquote, q {
+    quotes: none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+body {
+    min-width: 800px;
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 42px;
+}
+h2 {
+    font-size: 23px;
+}
+nav li {
+    float: left;
+    display: block;
+    width: 21.5%;
+    text-align: center;
+    padding: 23px 0;
+    position: relative;
+}
+nav a {
+    color: #6699ff;
+}
+.activ-page {
+    font-weight: bold;
+}
+nav li:nth-child(1) {
+    border-top: 5px solid #0066ff;
+    padding-left: 7%;
+}
+nav li:nth-child(2) {
+    border-top: 5px solid #009900;
+}
+nav li:nth-child(3) {
+    border-top: 5px solid #ffff66;
+}
+nav li:nth-child(4) {
+    border-top: 5px solid #ff6633;
+    padding-right: 7%;
+}
+
+nav li:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 45px;
+    background: #cccccc;
+    top: 8px;
+}
+
+nav li:first-child:before{
+    height: 0px;
+}
+
+nav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.top-print-banner {
+    color: #f2f2f2;
+    background: #333333;
+    font-stretch: ultra-condensed;
+    letter-spacing: 1.4px;
+}
+.top-print-banner div {
+    float: left;
+}
+.type-files {
+    background: #353535;
+    width: 15%;
+    padding: 3.5% 6.5%;
+    margin: 9%;
+    margin-left: 0;
+    border-radius: 10px;
+}
+.top-print-banner:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.top-print-banner img {
+    width: 100%;
+    max-width: 762px;
+}
+.section-left {
+    width: 50%;
+    margin-left: 8.5%;
+    margin-top: 9%;
+    margin-bottom: 8.5%;
+    margin-right: 4%;
+}
+.top-print-banner p {
+    margin: 40px 0 50px 0;
+    line-height: 1.5;
+    color: #cccccc;
+}
+
+.bottom {
+    padding: 20px;
+    padding-left: 60px;
+    background: #f15a24;
+    border-radius: 10px;
+    position: relative;
+}
+.top-print-banner .bottom a {
+    color: #ffffff;
+}
+.bottom a:before {
+    content: url(../img/bottom-ico.png);
+    position: absolute;
+    left: 18px;
+    top: 14px;
+}
+.index-content {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.index-content .col {
+    float: left;
+    width: 50%;
+    padding-bottom: 7%;
+}
+.ico-article {
+    margin-top: 60px;
+}
+.index-content h2 {
+    color: #4d4d4d;
+    margin: 16px 0;
+}
+.index-content p {
+    color: #cccccc;
+}
+.article-left:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 1px;
+    height: 85%;
+    background: #cccccc;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    z-index: -2;
+}
+.article-right .inner {
+    float: right;
+    font-stretch: ultra-condensed;
+    letter-spacing: 1.4px;
+    width: 85%;
+    margin-top: 210px;
+}
+.article-right h1 {
+    color: #cccccc;
+}
+.article-right p {
+    margin: 20px 0;
+    color: #333333;
+}
+.soc-counter div {
+    float: left;
+}
+.soc-counter {
+    margin-top: 50px;
+}
+.soc-counter:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.soc-bottom, .soc-label {
+    height: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+.soc-bottom {
+    margin-right: 9px;
+    padding: 3px;
+}
+.soc-label {
+    margin-right: 20px;
+    font-stretch: normal;
+    letter-spacing: normal;
+    font-size: 13px;
+    padding: 4px 3px 2px 3px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.ico-like {
+    background: linear-gradient(to top, #3b55a0, #4c69b9);
+}
+.soc-bottom:hover {
+    background: #feeded;
+}
+.ico-like:hover {
+    background: linear-gradient(to bottom, #3b55a0, #4c69b9);
+}
+.soc-label:before, .soc-label:after {
+    content: '';
+    position: absolute;
+    zoom: 1;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 50%;
+    margin: -4px 0 0 -4px;
+    border: 4px transparent solid;
+    border-right-color: #cccccc;
+    border-left: 0;
+}
+.soc-label:after {
+    margin-left: -3px;
+    border-right-color: #fff;
+}
+.index-content .container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.index-content .bottom-conteiner {
+    width: 270px;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+    background: #cc2d00;
+    border: 17px solid #cc2d00;
+    border-radius: 10px;
+}
+.index-content .bottom{
+    padding: 20px;
+    width: 230px;
+    border-radius: 10px;
+    background: #ff1d25;
+}
+.index-content .bottom a {
+    color: #fff;
+}
+.index-content .bottom:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 350px;
+    height: 130px;
+    left: -40px;
+    top: -37px;
+    z-index: -1;
+}
+.index-content:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+    position: absolute;
+    bottom: 50px;
+    z-index: -2;
+}
+
+.slider {
+    width: 80%;
+    margin: 85px auto 55px auto;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #cccccc;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    color: #666666;
+}
+.footer-left {
+    margin: 20px 0 40px 0;
+    float: left;
+}
+
+.footer-right {
+    margin: 20px 0 40px 0;
+    float: right;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #c43600;
+}
+
+
+.online-order-print {
+    width: 80%;
+    margin: 45px auto 0 auto;
+    position: relative;
+    color: #333333;
+}
+
+.online-order-print:before{
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+    position: absolute;
+    top: -45px;
+    z-index: -2;
+}
+
+
+.back-page a {
+    color: #333333;
+    text-decoration: underline;
+    position: relative;
+}
+
+.back-page a:before {
+    content: url(../img/ico-arrow-back.png);
+    display: block;
+    position: absolute;
+    left: -33px;
+    top: -3px;
+    
+}
+.back-page {
+    margin-left: 50px;
+}
+
+.table-order table {
+    width: 100%;
+}
+
+.table-order caption{
+    text-align: left;
+}
+
+.table-order th, td{
+    border: 1px solid #cccccc;
+    
+}
+
+.table-order table {
+}
+
+.table-order td, th{
+    height: 50px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.table-order tfoot td{
+    border: none;
+}
+
+.table-order tr td:nth-child(1), td:nth-child(5) {
+    font-weight: bold;
+}
+
+.table-order tbody td:nth-child(1) {
+    position: relative;
+}
+
+.table-order tbody td:nth-child(1):before {
+    content: url(../img/ico-del.png);
+    display: block;
+    position: absolute;
+    left: -36px;
+    top: 17px;
+}
+
+.table-order tr th:nth-child(1) {
+    text-align: left;
+}
+
+.table-order tr td:nth-child(1) {
+    width: 40%;
+
+}
+
+.table-order tr td:nth-child(2) {
+    width: 10%;
+    text-align: center;
+}
+
+.table-order tr td:nth-child(3) {
+    width: 10%;
+    text-align: center;
+}
+
+.table-order tr td:nth-child(4) {
+    width: 10%;
+    text-align: center;
+}
+
+.table-order tr td:nth-child(5) {
+    width: 10%;
+    text-align: center;
+}
+
+.table-order tr td:nth-child(6) {
+    width: 20%;
+    text-align: center;
+}
+
+.table-order .summ-price{
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #c43600;
+    position: relative;
+}
+
+.table-order .summ-price:before {
+    content: "ВСЕГО:";
+    display:block;
+    position: absolute;
+    left: -100px;
+    font-weight: bold;
+}
+
+
+.table-order {
+    margin: 50px 0 25px 0;
+}
+
+
+.table-order caption{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.table-bottom-control{
+    margin: 20px 0 145px 0;
+    position: relative;
+}
+
+.table-bottom-control a {
+    color: #ffffff;
+}
+
+.table-bottom-control>div {
+    float: left;
+    margin-right: 30px;
+}
+
+.table-bottom-control .bottom-add-file {
+    background: #e8251e;
+}
+
+
+.table-bottom-control .bottom-next {
+    background: #0071bc;
+}
+
+.table-bottom-control:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.table-bottom-control:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to top, #d9efff, #ffffff);
+    top: 145px;
+}
+
+
+footer:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+
