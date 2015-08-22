@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <table class="table">
+            <caption>
+            <img src="./img/shoping_cart.png" alt=""><h1>Cart shoping</h1>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th class="h-name-product"><span>Product</span>
+                    </th>
+                    <th class="h-quantity-product"><span>Qty.</span>
+                    </th>
+                    <th class="h-price-product"><span>Price for 1 pcs.</span>
+                    </th>
+                    <th class="h-cost-product"><span>Cost</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name-product">Washer, Samsung</td>
+                    <td class="quantity-product">
+                        <input class="quantity" type="number" value="1" min="0">
+                    </td>
+                    <td class='coints price-product'>
+                        <input class="price price-gold" type="number" value="24" min="0"><img src="./img/gold.png">
+                        <input class="price price-silver" type="number" value="11" min="0" max="99"><img src="./img/silver.png">
+                        <input class="price price-copper" type="number" value="6" min="0" max="99"><img src="./img/copper.png">
+                    </td>
+                    <td class='coints cost-product'>
+                        <span class='cost-gold'>0</span><img src="./img/gold.png">
+                        <span class='cost-silver'>0</span><img src="./img/silver.png">
+                        <span class='cost-copper'>0</span><img src="./img/copper.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name-product">Car, Tesla</td>
+                    <td class="quantity-product">
+                        <input class="quantity" type="number" value="1" min="0">
+                    </td>
+                    <td class='coints price-product'>
+                        <input class="price price-gold" type="number" value="569" min="0"><img src="./img/gold.png">
+                        <input class="price price-silver" type="number" value="32" min="0" max="99"><img src="./img/silver.png">
+                        <input class="price price-copper" type="number" value="87" min="0" max="99"><img src="./img/copper.png">
+                    </td>
+                    <td class='coints cost-product'>
+                        <span class='cost-gold'>0</span><img src="./img/gold.png">
+                        <span class='cost-silver'>0</span><img src="./img/silver.png">
+                        <span class='cost-copper'>0</span><img src="./img/copper.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="name-product">Quadrocopter, Phantom</td>
+                    <td class="quantity-product">
+                        <input class="quantity" type="number" value="2" min="0">
+                    </td>
+                    <td class='coints price-product'>
+                        <input class="price-gold" type="number" value="125" min="0"><img src="./img/gold.png">
+                        <input class="price-silver" type="number" value="21" min="0" max="99" min="0" max="99"><img src="./img/silver.png">
+                        <input class="price-copper" type="number" value="14" min="0" max="99"><img src="./img/copper.png">
+                    </td>
+                    <td class='coints cost-product'>
+                        <span class='cost-gold'>0</span><img src="./img/gold.png">
+                        <span class='cost-silver'>0</span><img src="./img/silver.png">
+                        <span class='cost-copper'>0</span><img src="./img/copper.png">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total cost: </td>
+                    <td class="total-cost">
+                        <span class='total-cost-gold'>0</span><img src="./img/gold.png">
+                        <span class='total-cost-silver'>0</span><img src="./img/silver.png">
+                        <span class='total-cost-copper'>0</span><img src="./img/copper.png">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

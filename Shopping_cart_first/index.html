@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app='shoppingCart' lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./js/controllers.js"></script>
+</head>
+
+<body ng-controller="shoppingCartList">
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6" ng-repeat='itemProducts in sellerBucket'>
+                    <div class="seller-bucket">
+                        <div class="wrapper-product">
+                            <div class="image-product">
+                                <a href="">
+                                    <img src="{{itemProducts.img}}">
+                                </a>
+                            </div>
+                            <div class="title-product">
+                                <p>{{itemProducts.title}}</p>
+                            </div>
+                            <div class="price-product">
+                                <p>$ <span class='price'>{{itemProducts.price}}</span></p>
+                            </div>
+                        </div>
+                        <div class='wrapper-edit-backet'>
+                            <p ng-click="remove(itemProducts)">Remove</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-price">
+            <p>Order price: {{sellerBucket.reduce(orderPrice, 0)}}</p>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-8 col-xs-12">
+                    <form class="form-order" name='form' novalidate>
+                        <div class="wrapper-form-name">
+                            <input class="form-name" placeholder="Name" type="text" ng-model="orderForm.name" name='uName' required>
+                            <span class='error-validation-form' ng-show="form.uName.$invalid && !form.uName.$pristine">Enter your name!</span>
+                        </div>
+                        <div class="wrapper-form-tel">
+                            <input class="form-tel" placeholder="Phone number" type="tel" ng-model="orderForm.tel" name='uTel' ng-pattern='/^\+38\(0\d{2}\)\d{7}$/' required>
+                            <span class='error-validation-form' ng-show="form.uTel.$invalid && !form.uTel.$pristine">Enter the correct phone number! Example: +38(056)1234567</span>
+                        </div>
+                        <div class="wrapper-form-email">
+                            <input class="form-email" placeholder="E-mail" type="email" ng-model="orderForm.email" name='uEmail' required>
+                            <span class='error-validation-form' ng-show="form.uEmail.$invalid && !form.uEmail.$pristine">Please enter a valid e-mail!</span>
+                        </div>
+                        <div class="wrapper-form-comment">
+                            <input class="form-comment" placeholder="Comment" type="text" ng-model="orderForm.comment">
+                        </div>
+
+						<div class="wrapper-form-send">
+							<input class="form-send" type="submit" ng-hide="order" value="Send" ng-click='sendOrder(orderForm)' ng-disabled="form.$invalid || isUnchanged(orderForm)">
+							<span class="message-send-order" ng-show="order">The order has been sent!</span>
+						</div>
+                        
+                    </form>
+                    {{orderForm}} {{order}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

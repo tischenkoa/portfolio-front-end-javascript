@@ -1,0 +1,114 @@
+.wrapper {
+	max-width: 900px;
+	min-width: 400px;
+	margin: 20px auto;
+}
+
+.seller-bucket {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #e2e2e2;
+	box-shadow: 0px 2px 5px 1px #e2e2e2;
+	/*height: 200px;*/
+}
+
+.image-product img {
+	max-width: 100%;
+}
+
+.title-product p:first-letter {
+	text-transform: uppercase;
+}
+.wrapper-product {
+	margin-bottom: 10px;
+}
+
+.wrapper-product p {
+	font-size: 11px;
+	margin-left: 10px;
+}
+
+.wrapper-edit-backet {
+	border-top: 1px solid #ebebeb;
+}
+
+.price	{
+	font-weight: bold;
+}
+
+.wrapper-edit-backet p {
+	cursor: pointer;
+	padding: 10px;
+	margin: 0;
+	color: #f1aa6c;
+}
+
+.order-price p{
+	font-size: 26px;
+	margin: 25px 15px;
+}
+
+.form-name, .form-tel, .form-email, .form-comment {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #9e9e9e;
+	padding: 15px 10px;
+	margin-top: 25px;
+}
+
+.wrapper-form-name, .wrapper-form-tel, .wrapper-form-email{
+	position: relative;
+}
+
+.wrapper-form-name:before, .wrapper-form-tel:before, .wrapper-form-email:before{
+	content: "*";
+	font-size: 35px;
+	color: red;
+	display: block;
+	right: 10px;
+	top: 32px;
+	position: absolute;
+}
+
+.form-send {
+	width: 152px;
+	height: 36px;
+	border-radius: 1px;
+	box-shadow: 0px 0px 5px 1px #f8f6f7;
+	border: none;
+	background: #28a49a;
+	color: #e4fffc;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin: 16px 0;
+}
+
+/*.form-order input.ng-invalid.ng-dirty {
+        background-color: #FA787E;
+      }
+    
+.form-order input.ng-valid.ng-dirty {
+        background-color: #78FA89;
+}*/
+
+.error-validation-form {
+	color: red;
+	font-style: 10px;
+	margin-left: 8px;
+}
+
+.message-send-order {
+	display: inline-block;
+	width: 250px;
+    height: 36px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 5px 1px #1DA55F;
+    border: none;
+    background: #1DA55F;
+    color: #e4fffc;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 16px 0;
+    padding: 8px 50px;
+}
+
