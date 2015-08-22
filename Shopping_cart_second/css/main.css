@@ -1,0 +1,82 @@
+.wrapper {
+	min-width: 600px;
+	width: 70%;
+	margin: 20px auto;
+	 font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+.table {
+	width: 100%;
+}
+
+.quantity, .price-silver, .price-copper{
+	width: 35px;
+}
+.price-gold {
+	width: 50px;
+}
+
+.h-name-product {
+	width: 35%
+}
+
+.h-quantity-product {
+	width: 15%;
+}
+
+.h-price-product {
+	width: 30%;
+}
+
+.h-cost-product {
+	width: 20%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td{
+	text-align: left;
+	height: 30px;
+    padding: 15px 5px;
+	vertical-align: middle;
+}
+
+tbody td{
+	border-bottom: 2px solid #DADADA; 
+	border-top: 2px solid #DADADA; 
+}
+
+tfoot td:first-child {
+	text-align: right;
+}
+
+tbody tr:hover {
+	background: #D6D7E6;
+}
+
+.sort span {
+	position: relative;
+	padding-right: 25px;
+}
+
+.table th span:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.sort span:before {
+	content: '\25B2';
+	display: block;
+	position: absolute;
+	right: 0;
+    top: 0;
+}
+
+.sort.reversion-sort span:before {
+	content: '\25bc';
+	display: block;
+	position: absolute;
+	right: 0;
+    top: 0;
+}
